@@ -6,7 +6,7 @@ let parser = new ArgumentParser({ version: "0.0.1", addHelp: true, description: 
 parser.addArgument(["--geojsonFile"], {});
 parser.addArgument(["--lngCols"], {});
 parser.addArgument(["--latCols"], {});
-parser.addArgument(["--outputFile"], { defaultValue: "C:/temp/output.csv" });
+parser.addArgument(["--outputFile"], { defaultValue: "./output.csv" });
 parser.addArgument(["--idAtrib"], {});
 
 const args = parser.parseArgs();
